@@ -6,6 +6,7 @@ const Search = ({onClick}) => {
 
     const handleCityName = () => {
         onClick(city);
+        setCity("")
     }
 
   return (
@@ -13,6 +14,7 @@ const Search = ({onClick}) => {
         <input 
         onChange={(e) => setCity(e.target.value)}
         type="text" 
+        value={city}
         placeholder="Enter city name"
         />
         <button onClick={handleCityName}

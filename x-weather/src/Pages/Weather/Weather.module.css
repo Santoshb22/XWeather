@@ -3,6 +3,11 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(232, 252, 251);
-    height: 100vh;
+    height: 110vh;
     padding-top: 6rem;
+    width: 100%;
+}
+
+.displayWeather {
+    width: 100%;
 }

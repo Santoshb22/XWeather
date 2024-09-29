@@ -1,8 +1,11 @@
 import styles from "./WeatherCard.module.css";
 
-const WeatherCard = () => {
+const WeatherCard = ({title, value, unit = ""}) => {
   return (
-    <div>WeatherCard</div>
+    <div className={styles.card}>
+      <p className={styles.weatherType}>{title}</p>
+      <p className={styles.value}>{value}{unit}</p>
+    </div>
   )
 }
 

@@ -15,7 +15,7 @@ const Weather = () => {
         <Search onClick = {handleGetCity}/>
       </div>
 
-      <div>
+      <div className={styles.displayWeather}>
         <DisplayWeather city = {city}/>
       </div>
     </div>

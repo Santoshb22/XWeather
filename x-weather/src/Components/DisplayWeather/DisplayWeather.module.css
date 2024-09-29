@@ -1,3 +1,29 @@
 .displayWeather {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 1rem;
+    }
 }
