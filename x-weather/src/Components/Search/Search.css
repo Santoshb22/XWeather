@@ -1,10 +1,10 @@
-.searchBox {
+.search-bar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.searchBox input {
+.search-bar input {
     width: 20rem;
     height: 2.5rem;
     padding: 0rem 0.4rem;
@@ -15,7 +15,7 @@
     color: rgb(162, 162, 162);
 }
 
-.searchBox button {
+.search-bar button {
     border-radius: 0.25rem;
     width: 5rem;
     height: 2.5rem;

@@ -1,10 +1,10 @@
-import styles from "./WeatherCard.module.css";
+import "./WeatherCard.css";
 
 const WeatherCard = ({title, value, unit = ""}) => {
   return (
-    <div className={styles.card}>
-      <p className={styles.weatherType}>{title}</p>
-      <p className={styles.value}>{value}{unit}</p>
+    <div className="weather-card">
+      <p className="weatherType">{title}</p>
+      <p className="value">{value}{unit}</p>
     </div>
   )
 }

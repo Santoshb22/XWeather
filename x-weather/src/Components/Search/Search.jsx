@@ -1,16 +1,14 @@
 import { useState } from "react";
-import styles from "./Search.module.css";
-
+import "./Search.css"
 const Search = ({onClick}) => {
     const [city, setCity] = useState("");
 
     const handleCityName = () => {
         onClick(city);
-        setCity("")
     }
 
   return (
-    <div className={styles.searchBox}>
+    <div className="search-bar">
         <input 
         onChange={(e) => setCity(e.target.value)}
         type="text" 

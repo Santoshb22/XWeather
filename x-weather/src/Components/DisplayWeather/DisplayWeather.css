@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.cards {
+.weather-cards {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 768px) {
-    .cards {
+    .weather-cards {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 1rem;
@@ -21,7 +21,7 @@
 
 
 @media (max-width: 480px) {
-    .cards {
+    .weather-cards {
         display: grid;
         grid-template-columns: repeat(1, auto);
         gap: 1rem;

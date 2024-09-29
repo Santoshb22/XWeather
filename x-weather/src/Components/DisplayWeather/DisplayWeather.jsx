@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./DisplayWeather.module.css";
+import "./DisplayWeather.css";
 import WeatherCard from "../WeatherCard/WeatherCard";
 
 const DisplayWeather = ({city}) => {
@@ -7,8 +7,6 @@ const DisplayWeather = ({city}) => {
   const [weatherData, setWeatherData] = useState(null);
 
   const apiKey = import.meta.env.VITE_API_KEY
-
-  console.log("weatherData", weatherData);
 
   const fetchData = () => {
     if(city) {
@@ -42,14 +40,14 @@ const DisplayWeather = ({city}) => {
   }, [city])
 
   return (
-    <div className={styles.displayWeather}>
+    <div className="displayWeather">
       {
-        loading && <p>Loading...</p>
+        loading && <p>Loading data...</p>
       }
 
       {
         !loading && weatherData && (
-          <div className={styles.cards}>
+          <div className="weather-cards">
             <WeatherCard 
             title={"Tempreature"} 
             value={weatherData?.current?.temp_c} 

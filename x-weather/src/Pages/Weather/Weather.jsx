@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DisplayWeather from "../../Components/DisplayWeather/DisplayWeather";
 import Search from "../../Components/Search/Search"
-import styles from "./Weather.module.css"
+import "./Weather.css"
 const Weather = () => {
 
   const [city, setCity] = useState("");
@@ -10,12 +10,12 @@ const Weather = () => {
   }
 
   return (
-    <div className={styles.weatherApp}>
+    <div className="weatherApp">
       <div>
         <Search onClick = {handleGetCity}/>
       </div>
 
-      <div className={styles.displayWeather}>
+      <div className="displayWeather">
         <DisplayWeather city = {city}/>
       </div>
     </div>
