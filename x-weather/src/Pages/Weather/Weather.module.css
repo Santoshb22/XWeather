@@ -1,0 +1,8 @@
+.weatherApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232, 252, 251);
+    height: 100vh;
+    padding-top: 6rem;
+}
